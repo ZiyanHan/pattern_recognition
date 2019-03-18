@@ -54,7 +54,7 @@ void KNN(std::vector<double> Data, int k){
 	}
 	std::fstream out("./density.txt", std::ios::out);
 	for(int i=0; i<density.size(); i++){
-		out << i << " " << density[i] << std::endl;	
+		out << Data[i] << " " << density[i] << std::endl;	
 	}
 	out.close();
 	std::cout<<Data[0]<<" "<<Data[1]<<" "<<Data[2]<<" "<<Data[3]<<" "<<Data[4]<<" "<<Data[5]<<" "<<Data[6]<<" "<<Data[7]<<std::endl;
@@ -63,7 +63,7 @@ void KNN(std::vector<double> Data, int k){
 int main(){
 	std::vector<double> Data;
 	input("./data.txt", Data);
-	KNN(Data, 3);
+	KNN(Data, 900);
 	return 0;
 }
 
