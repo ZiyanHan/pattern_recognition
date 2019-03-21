@@ -62,8 +62,8 @@ void KNN(std::vector<double> Data, int k){
 
 int main(){
 	std::vector<double> Data;
-	input("./data.txt", Data);
-	KNN(Data, 900);
+	input("./data/data_500.txt", Data);
+	KNN(Data, 32);
 	return 0;
 }
 
